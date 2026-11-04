@@ -11,15 +11,14 @@ A ideia central: sair de um sistema **reativo** (que age depois que a bateria j�
 Requer só o Python 3, sem nenhuma biblioteca externa.
 
 ```text
-python main.py            # menu: o avaliador escolhe o cenário ou a simulação
-python main.py 1          # roda direto o cenário 1
-python main.py 9b         # roda direto a simulação 9b (reativo × preditivo)
-python main.py todos      # roda tudo
+python main.py            # abre o menu: digite a opção (ex.: 1, 9b, todos) e Enter
 python painel.py          # grava painel/dados.js com todos os números para o painel
 python -m unittest discover -s tests -t .     # 76 testes
 ```
 
-No Windows, se os acentos aparecerem trocados no terminal, rode antes `set PYTHONIOENCODING=utf-8`.
+No menu: `1` a `19` são os cenários prontos, `9a` a `9d` as simulações (reativo × preditivo), `arv` a árvore de dados, `todos` roda tudo e `sair` encerra.
+
+No Windows, se os acentos aparecerem trocados no terminal, rode antes `$env:PYTHONIOENCODING="utf-8"` (PowerShell) ou `set PYTHONIOENCODING=utf-8` (cmd).
 
 ## Como funciona
 

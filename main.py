@@ -5,13 +5,7 @@
 #   - a árvore de dados da colônia;
 #   - a exportação dos números para o painel.
 #
-# Uso:
-#   python main.py          → menu interativo
-#   python main.py 5        → roda direto o cenário 5
-#   python main.py 9b       → roda direto a simulação 9b
-#   python main.py todos    → roda tudo, sem perguntar nada
-
-import sys
+# Uso: python main.py → abre o menu; digite a opção (ex.: 1, 9b, todos) e Enter.
 
 from dados import criar_colonia, criar_historico, COLONIAS, TEMPESTADES
 from colonia import mostrar_arvore
@@ -166,10 +160,7 @@ def executar(opcao):
 
 
 def main():
-    # Procedimento: com argumento, roda direto; sem argumento, abre o menu.
-    if len(sys.argv) > 1:
-        executar(sys.argv[1])
-        return
+    # Procedimento: mostra o menu, lê a opção e executa, até o avaliador sair.
     continuar = True
     while continuar:
         mostrar_menu()
